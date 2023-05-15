@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="single-task-modal" class="single-task-modal">
+        <div class="topbar">
+            <button onclick="ToggleSingleTaskModal()" class="onebtn">Back</button>
+            <p id="single-task-name"></p>
+            <button onclick="ToggleItemModal()" class="onebtn">Add New item</button>
+        </div>
+        <div id="singleTaskCard" class="singleTaskCard"></div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="box">
+            <h2>Add new Task</h2>
+            <input type="text" id="task-Input" placeholder="enter name" class="input_box">
+            <div class="down">
+                <input type="button" value="add" id="task-submit" onclick="addTask()"/>
+                <input type="button" id="modal-close" value="Close" onclick="ToggleModal()"/>
+            </div>
+        </div>
+    </div>
+    <div class="item-modal" id="item-modal">
+        <div class="box">
+            <h2>Add New Item</h2>
+            <input type="text" id="item-input" placeholder="Enter the item name">
+            <div class="down">
+            <input type="button" value="Add" id="item-submit" onclick="addItem()">
+            <input type="button" value="Close" id="modal-close" onclick="ToggleItemModal()">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="topbar">
+            <!-- <h1>Tasks<span>list</span></h1> -->
+            <div class="upper">Tasks<span class="upper1">List</span></div>
+            <p class="for" id="add-option" class="add-option" >
+                <img src="./add_circle_FILL1_wght400_GRAD0_opsz48.svg" alt="" width="40px">
+                <span class="add">Add Task</span> 
+            </p>
+        </div>
+        <p class="seen">No Items in the todo list</p>
+        <div id="taskContainer" class="taskContainer"></div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

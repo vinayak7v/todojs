@@ -1,0 +1,132 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* z-index: 1; */
+}
+.upper
+{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.upper1
+{
+    color: blue;
+}
+.topbar
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-top: 30px;
+}
+.add
+{
+    font-size: 25px;
+    padding-left: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.for
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box
+{
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+}
+#task-Input
+{
+    width: 395px;
+    height: 30px;
+}
+.modal
+{
+    background-color: rgba(0, 0, 0, 0.594);
+    backdrop-filter: blur(2px);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.item-modal
+{
+    background-color: rgba(0, 0, 0, 0.594);
+    backdrop-filter: blur(2px);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#item-input
+{
+    width: 395px;
+    height: 30px; 
+}
+.single-task-modal
+{
+    display: none;
+    height: 100vh;
+}
+
+.down
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.taskContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+.taskCard
+{
+    background-color:white;
+    box-shadow: rgba(0,0,0,0.35)0px 5px 15px;
+    min-width: 300px;
+    border-radius: 10px;
+    /* min-height: 325px; */
+
+}
+.taskTitle
+{
+    text-align: center;
+}
+.seen
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 280px;
+}
+.onebtn
+{
+    background-color: blue;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
